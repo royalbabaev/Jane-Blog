@@ -1,0 +1,607 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #f1f1f1;
+}
+
+header nav {
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000;
+    font-size: 14px;
+}
+
+header nav .social {
+    display: flex;
+}
+
+header nav .social a {
+    color: #fff;
+    height: 40px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 300ms;
+}
+
+header nav .social a:hover {
+    background-color: #d1d1d1;
+    color: #000;
+}
+
+header nav .search a {
+    color: #fff;
+    height: 40px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 300ms;
+}
+
+header nav .search a:hover {
+    background-color: #d1d1d1;
+    color: #000;
+}
+
+header .blog-title {
+    background-color: #fff;
+    width: 100%;
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+header .blog-title h1 {
+    font-size: 48px;
+}
+
+header .blog-title h4 {
+    font-size: 18px;
+
+    span {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        height: 30px;
+        width: 120px;
+        background-color: #000;
+        color: #fff;
+    }
+
+}
+
+main .section1 .prologue {
+    width: 100%;
+    position: relative;
+}
+
+main .section1 .prologue .image {
+    width: 100%;
+}
+
+main .section1 .prologue .image img {
+    width: 100%;
+}
+
+main .section1 .prologue .prologue-text {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    margin-left: 20px;
+    color: #fff;
+}
+
+main .section1 .prologue .prologue-text h3 {
+    font-size: 36px;
+}
+
+main .section1 .prologue .prologue-text h2 {
+    font-size: 64px;
+    margin: 20px 0;
+}
+
+main .section1 .prologue .prologue-text button {
+    height: 50px;
+    width: 120px;
+    font-size: 14px;
+    border: none;
+    background-color: #fff;
+    opacity: .7;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+main .section1 .prologue .prologue-text button:hover {
+    opacity: 1;
+}
+
+main .section2 {
+    display: flex;
+    margin: 40px;
+    gap: 40px;
+}
+
+main .section2 .left-section {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+main .section2 .right-section {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+}
+
+main .section2 .left-section .article {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+
+    &:last-child {
+        margin: 0;
+    }
+}
+
+main .section2 .left-section .article-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+main .section2 .left-section .article-title h3 {
+    font-size: 24px;
+}
+
+main .section2 .left-section .article-title h4 {
+    font-size: 18px;
+    font-weight: normal;
+
+    span {
+        opacity: .5;
+    }
+}
+
+main .section2 .left-section .article .article-img {
+    margin: 20px 0;
+}
+
+main .section2 .left-section .article .article-img img {
+    width: 100%;
+}
+
+main .section2 .left-section .article .graph p:last-child {
+    margin: 20px 0;
+}
+
+main .section2 .left-section .article .buttons {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0 0;
+}
+
+main .section2 .left-section .article .buttons .like {
+    height: 50px;
+    width: 50px;
+    border: 1px solid #d1d1d1;
+    background-color: #fff;
+    cursor: pointer;
+    transition: 300ms;
+
+    &:hover {
+        background-color: #f1f1f1;
+    }
+}
+
+main .section2 .left-section .article .buttons .reply {
+    height: 50px;
+    width: 110px;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    transition: 300ms;
+
+    &:hover {
+        background-color: #373737;
+    }
+
+    span {
+        margin-left: 5px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        width: 25px;
+        height: 25px;
+        background-color: #fff;
+        color: #000;
+    }
+}
+
+main .section2 .left-section .article input {
+    display: none;
+}
+
+main .section2 .left-section .article .comment {
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
+
+main .section2 .left-section .article .comment .line {
+    width: 100%;
+    border-top: 1px solid #d1d1d1;
+    margin: 40px 0;
+}
+
+main .section2 .left-section .article .comment img {
+    width: 100px;
+}
+
+main .section2 .left-section .article .comment .comment-name {
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+main .section2 .left-section .article .comment .comment-date {
+    font-size: 14px;
+    opacity: .6;
+}
+
+main .section2 .left-section .article .comment .comment-text {
+    margin-top: 20px;
+}
+
+main .section2 .left-section .article input:checked ~ .comment {
+    display: block;
+}
+
+main .section2 .right-section .me {
+    display: flex;
+    flex-direction: column;
+    background-color: #000;
+}
+
+main .section2 .right-section .me img {
+    width: 100%;
+}
+
+main .section2 .right-section .me-about {
+    color: #fff;
+    padding: 20px;
+
+    h4 {
+        margin-bottom: 20px;
+    }
+}
+
+main .section2 .right-section .popular-posts {
+    background-color: #fff;
+}
+
+main .section2 .right-section .popular-posts .popular-title {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #000;
+    color: #fff;
+    font-weight: bold;
+}
+
+main .section2 .right-section .popular-posts .line {
+    border-bottom: 1px solid #d1d1d1;
+}
+
+main .section2 .right-section .popular-posts .post {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+main .section2 .right-section .popular-posts .post:hover {
+    background-color: #d1d1d1;
+}
+
+main .section2 .right-section .popular-posts .post .post-img {
+    margin-right: 20px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+main .section2 .right-section .popular-posts .post .post-img img {
+    width: 100%;
+}
+
+main .section2 .right-section .popular-posts .post .post-text {
+    display: flex;
+    flex-direction: column;
+
+    span:first-child {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+}
+
+main .section2 .right-section .advertise {
+    background-color: #fff;
+}
+
+main .section2 .right-section .advertise .ad-title {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #000;
+    color: #fff;
+    font-weight: bold;
+}
+
+main .section2 .right-section .advertise .ad-here {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f1f1f1;
+    margin: 20px;
+    height: 200px;
+}
+
+main .section2 .right-section .tags {
+    background-color: #fff;
+}
+
+main .section2 .right-section .tags .tags-title {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #000;
+    color: #fff;
+    font-weight: bold;
+}
+
+main .section2 .right-section .tags .tags-text {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+main .section2 .right-section .tags .tags-text a {
+    height: 20px;
+    padding: 15px 10px;
+    display: inline-flex;
+    align-items: center;
+    background-color: #f1f1f1;
+    color: #000;
+    transition: 300ms;
+
+    &:hover {
+        background-color: #d1d1d1;
+    }
+}
+
+main .section2 .right-section .inspiration {
+    background-color: #fff;
+}
+
+main .section2 .right-section .inspiration .ins-title {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #000;
+    color: #fff;
+    font-weight: bold;
+}
+
+main .section2 .right-section .inspiration .ins-img {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 20px;
+}
+
+main .section2 .right-section .inspiration .ins-img .left img {
+    margin-bottom: 15px;
+
+    &:last-child {
+        margin: 0;
+    }
+}
+
+main .section2 .right-section .inspiration .ins-img .right img {
+    margin-bottom: 15px;
+
+    &:last-child {
+        margin: 0;
+    }
+}
+
+main .section2 .right-section .inspiration .ins-img .left, .right {
+    width: 50%;
+}
+
+main .section2 .right-section .inspiration .ins-img img {
+    width: 100%;
+}
+
+main .section2 .right-section .follow {
+    background-color: #fff;
+}
+
+main .section2 .right-section .follow .follow-title {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #000;
+    color: #fff;
+    font-weight: bold;
+}
+
+main .section2 .right-section .follow .follow-social {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+main .section2 .right-section .follow .follow-social a {
+    color: #000;
+}
+
+main .section2 .right-section .subscribe {
+    background-color: #fff;
+}
+
+main .section2 .right-section .subscribe .subs-title {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #000;
+    color: #fff;
+    font-weight: bold;
+}
+
+
+main .section2 .right-section .subscribe .subs-main {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+}
+
+main .section2 .right-section .subscribe .subs-main input {
+    height: 50px;
+    padding: 10px;
+    border: 1px solid #d1d1d1;
+    font-size: 14px;
+}
+
+main .section2 .right-section .subscribe .subs-main button {
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+    font-size: 16px;
+    transition: 300ms;
+}
+
+main .section2 .right-section .subscribe .subs-main button:hover {
+    background-color: #373737;
+}
+
+footer {
+    height: 150px;
+    background-color: #616161;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+
+    div {
+        color: #fff;
+
+        span {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
+
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 50px;
+        width: 50px;
+        background-color: #000;
+        color: #fff;
+        font-size: 16px;
+        margin: 20px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .section2 {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    main .section2 .left-section .article {
+        font-size: 14px;
+    }
+
+    main .section2 .left-section .article-title h3 {
+        font-size: 21px;
+    }
+    
+    main .section2 .left-section .article-title h4 {
+        font-size: 16px;
+        font-weight: normal;
+    }
+    
+    header nav {
+        display: none;
+    }
+    
+    header .blog-title {
+        h1 {
+            font-size: 36px;
+        }
+
+        h4 {
+            font-size: 16px;
+        }
+
+        span {
+            font-size: 16px;
+        }
+    }
+
+    main .section1 .prologue .prologue-text {
+        h2 {
+            font-size: 48px;
+            margin: 20px 0;
+        }
+
+        h3 {
+            font-size: 28px;
+        }
+    }
+}
